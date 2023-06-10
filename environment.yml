@@ -1,0 +1,20 @@
+name: semcon
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  # pytorch packages
+  - pytorch
+  - pytorch-cuda=11.8  # check your CUDA version!
+  # use pip for remaining packages
+  - pip
+  - pip:
+      - matplotlib
+      - numpy
+      - pandas
+      - scikit-learn
+      - scipy
+      - tqdm
